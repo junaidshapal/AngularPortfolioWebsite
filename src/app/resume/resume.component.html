@@ -1,0 +1,158 @@
+
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="IsWorkExperienceOpen">
+
+            <!--This button is controlling the Openeing and closing
+            of accordion.-->
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Work Expereince</div>
+                    <div style="width:10.95px;">
+                        <div *ngIf="!IsWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="IsWorkExperienceOpen" style="color: white;">v</div>    
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Microsoft</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        <li>Vel, fugit! Vitae beatae dolor dignissimos excepturi ad facere.</li>
+                        <li>Assumenda dolorum voluptate natus eaque nam iste libero.</li>
+                        <li>doloribus temporibus in tempora optio?</li>
+                    </ul>
+                </div>
+                 
+                <hr> 
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Manager</h2>
+                    <h3 class="text-primary">Bank Manager</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        <li>Vel, fugit! Vitae beatae dolor dignissimos excepturi ad facere.</li>
+                        <li>Assumenda dolorum voluptate natus eaque nam iste libero.</li>
+                        <li>doloribus temporibus in tempora optio?</li>
+                    </ul>
+                </div>
+                 
+                <hr>
+                 
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Tester</h2>
+                    <h3 class="text-primary">Tester in SETW</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                        <li>Vel, fugit! Vitae beatae dolor dignissimos excepturi ad facere.</li>
+                        <li>Assumenda dolorum voluptate natus eaque nam iste libero.</li>
+                        <li>doloribus temporibus in tempora optio?</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width:10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>    
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">BSc IET</h2>
+                    <h3 class="text-primary">Bachelors in Information Engineering Technology</h3>
+                    <ul>
+                        <li><strong>Matriculation:</strong> APS Khuiratta 2017-2019</li>
+                        <li><strong>ICS:</strong> Suffa College 2019-2021</li>
+                        <li><strong>BS Degree:</strong> National Skills University, Islamabad</li>
+                        <li><strong>MS Degree:</strong> University of Edingburgh, Scotland</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+
+            <accordion-group [(isOpen)]="isCertificatesOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Certifications</div>
+                    <div style="width:10.95px;">
+                        <div *ngIf="!isCertificatesOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificatesOpen" style="color: white;">v</div>    
+                    </div>
+                </button>
+
+               <div style="text-align: left;">
+                <h3>Microsoft Azure Data Fundamentals</h3>
+                <ul>
+                    <li>Recieved in September 2023</li>
+                    <li>From Microsoft</li>
+                </ul>
+                <h3>Asp.Net Core Fundamentals</h3>
+                <ul>
+                    <li>Recieved in December 2023</li>
+                    <li>From DevCoders</li>
+                </ul>
+                <h3>Angular Fundamentals</h3>
+                <ul>
+                    <li>Recieved in January 2024</li>
+                    <li>From NetBeans</li>
+                </ul>
+               </div>
+            </accordion-group>
+
+
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width:10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>    
+                    </div>
+                </button>
+
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>JAVA</li>
+                            <li>JS</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Asp.Net Core</li>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>Typescript</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Good Communication Skills</li>
+                            <li>Wordpress</li>
+                            <li>SEO</li>
+                            <li>MS Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+
+        </accordion>
+    </div>
+   
+</div>

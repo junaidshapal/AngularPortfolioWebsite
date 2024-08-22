@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <!--About Me-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2 class="alert alert-success mb-4">About Me</h2>
+                <img src="../../assets/pic1.jpeg" alt="profile pic" width="280" height="256" class="rounded-circle ">
+                <p class="mt-2">As a versatile Web API developer, I have a robust background in .NET and Angular, allowing me to build and maintain dynamic and responsive web applications. 
+                    I possess hands-on experience with jQuery
+                    for seamless client-side scripting and interaction, and a solid understanding of WordPress
+                    for CMS-based solutions. My SQL expertise extends to both PostgreSQL and SQL Server, ensuring efficient database management and integration.
+                    Additionally, I am proficient in using Postman for API testing and debugging, ensuring reliable and well-documented API endpoints.</p>
+            </div>
+        </div>
+        
+        <!--Featured Projects-->
+        <!--Homepage-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2 class="alert alert-success mb-4">Featured projects</h2>
+                <h4 class="mb-3">{{featuredProject.name}}</h4>
+            </div>
+            
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src="{{picture}}" alt="" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+           <strong><p class="mt-2">{{featuredProject.summary}}</p></strong> 
+           <p>Visit the portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>
