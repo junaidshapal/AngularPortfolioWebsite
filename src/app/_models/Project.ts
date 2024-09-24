@@ -1,5 +1,6 @@
 import { Tag } from "./Tag";
 
+//Interface for Project with properties
 export interface Project{
     id: number;
     name:string;

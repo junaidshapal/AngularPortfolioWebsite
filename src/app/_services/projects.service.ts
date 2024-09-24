@@ -8,6 +8,7 @@ import { Tag } from '../_models/Tag';
 export class ProjectsService {
 
 
+  //Array of projects (hardcoded)
   projects: Project[]=[
     {
       id: 0,

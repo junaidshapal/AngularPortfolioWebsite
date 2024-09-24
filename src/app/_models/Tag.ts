@@ -1,5 +1,7 @@
 export class Tag{
 
+
+//Tags class with properties
     static readonly ANGULAR = new Tag('Angular', 'red');
     static readonly TYPESCRIPT = new Tag('Typecript', 'darkgreen');
     static readonly JAVA = new Tag('Java', 'darkblue');
