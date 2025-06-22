@@ -14,9 +14,7 @@ export class Tag{
 
 
     private constructor(private readonly key:string, public readonly color:string){
-        if (!key || !color) {
-            throw new Error('Key and color must be provided');
-        }
+        
     }
 
     toString(){
