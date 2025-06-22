@@ -20,7 +20,14 @@ export class ProjectsService {
       tags:[Tag.PYTHON, Tag.SQL]
     },
 
-   
+    {
+      id: 1, name:"Angular Project",
+      summary:"This is a angular Project",
+      projectLink:"https://lingostry.com/",
+      description:" A responsive Angular app that allows businesses to collect and analyze customer feedback, featuring dynamic forms, data visualization, and secure data storage through API integration.",
+      pictures:["../../assets/abc.jpg","../../assets/img2.jpg","../../assets/img3.jpg"],
+      tags:[Tag.ANGULAR, Tag.TYPESCRIPT]
+    },
 
     {
       id: 2, name:"Dot Net Project",
